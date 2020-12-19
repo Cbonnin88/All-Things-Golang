@@ -8,16 +8,14 @@ func salesTaxPhila(salesTax, price float32) float32 {
 }
 
 func main() {
-	var totalPrice float32
-	totalPrice = salesTaxPhila(8.0, 124)
+	totalPrice := salesTaxPhila(8.0, 124)
 	fmt.Println(totalPrice)
 
 	myAge := 32
 	myDogsAge := computeDogYears(myAge)
 	fmt.Println(myDogsAge)
 
-	var totalPriceFr float32
-	totalPriceFr = vatTaxFr(123)
+	totalPriceFr := vatTaxFr(123)
 	fmt.Println(totalPriceFr)
 }
 

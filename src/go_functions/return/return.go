@@ -7,7 +7,7 @@ func newCar() string {
 	car1 := 25000
 	car2 := 50000
 	car3 := 75000
-	budget := 55000
+	budget := 1
 
 	if car1 <= budget && budget < car2 {
 		choice = "The Lexus is in your price range"
@@ -23,8 +23,6 @@ func newCar() string {
 }
 
 func main() {
-
-	var priceTag string
-	priceTag = newCar()
-	fmt.Printf(priceTag)
+	priceTag := newCar()
+	fmt.Print(priceTag)
 }

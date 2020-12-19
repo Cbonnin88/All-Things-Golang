@@ -7,23 +7,25 @@ import (
 )
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
+	randomNum := rand.Intn(11)
+	guessingGame(randomNum)
+}
+func guessingGame(randomNum int) {
+	var guess int
+	var try = 0
 
 	for {
-		fmt.Println("Choose a number from one to 10")
-		var guess int
+		fmt.Println("Choose a number between one and ten")
 		fmt.Scan(&guess)
-		rand.Seed(time.Now().UnixNano())
-		secretNumber := rand.Intn(10)
-
-		if guess > secretNumber {
-			fmt.Println("Too high")
-			continue
-		} else if guess < secretNumber {
-			fmt.Println("Too low")
-			continue
-		} else if guess == secretNumber {
-			fmt.Println("Great Guess")
+		if guess == randomNum {
+			fmt.Printf("Great guess, it took you %d tries", try)
 			break
+		} else if guess > randomNum {
+			fmt.Println("Too High")
+		} else if guess < randomNum {
+			fmt.Println("Too Low")
 		}
+		try++
 	}
 }

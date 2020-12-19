@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	body := "fat"
-	body2 := "skinny"
-	fmt.Printf("Are you a %v whore or a %v whore?", body, body2)
-
+	magic := "dark"
+	magic2 := "light"
+	fmt.Printf("Are you a %v or %v mage?", magic, magic2)
 }

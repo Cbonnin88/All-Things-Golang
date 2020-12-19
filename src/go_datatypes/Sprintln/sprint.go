@@ -10,9 +10,9 @@ teacherSays := fmt.Sprint("You scored a", grade, "on the test!", compliment
 Prints : You scored a 100 on the test! Great Job!*/
 
 func main() {
-	weight := 350
-	quote := "fat ass!!!"
-	coachSays := fmt.Sprintln("No wonder you are", weight, "pounds!!!!. Gravvy is not a drink", quote)
+	weight := 35000
+	quote := "house"
+	coachSays := fmt.Sprintln("So you earn about", weight, "euros annually?,. No wonder you have a nice", quote)
 	fmt.Print(coachSays)
 
 	// If we need to interpolate a string, without printing it, then we use "fmt.Sprintf()"
@@ -23,8 +23,8 @@ func main() {
 
 	// anther way of writing the Sprint methods (valid for Sprint, Spirintln and Sprintf):
 
-	stepA := "fart in ..."
-	stepB := "queef out..."
+	stepA := "Breath in...."
+	stepB := "Breath out..."
 	meditation := fmt.Sprintln(stepA, stepB)
 	fmt.Print(meditation)
 

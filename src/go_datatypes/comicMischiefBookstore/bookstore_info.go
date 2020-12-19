@@ -16,7 +16,7 @@ func main() {
 	var grade float32
 	grade = 6.5
 
-	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is: %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice1)
+	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice1)
 
 	title = "Epic Vol 1"
 	writer = "Ryan N. Shawn"
@@ -28,7 +28,7 @@ func main() {
 
 	var bookPrice2 float32 = bookStore02(21.98)
 
-	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is: %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice2)
+	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice2)
 
 	title = "Fade Away"
 	writer = "Derrick Allison"
@@ -40,28 +40,22 @@ func main() {
 
 	var bookPrice3 float32 = bookStore03(45.56)
 
-	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is: %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice3)
+	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice3)
 }
 func bookStore01(price float32) float32 {
 	const price1 float32 = 8.79
-	var totalPrice float32
-	totalPrice = (price/100.2)*100*.20 + price1
+	totalPrice := (price/100.2)*100*.20 + price1
 	return totalPrice
 }
 
 func bookStore02(price float32) float32 {
-
 	const price2 = 21.98
-	var totalPrice2 float32
-	totalPrice2 = (price/100.2)*100*.20 + price2
+	totalPrice2 := (price/100.2)*100*.20 + price2
 	return totalPrice2
 }
 
 func bookStore03(price float32) float32 {
-
 	const price3 = 45.56
-
-	var totalPrice3 float32
-	totalPrice3 = (price/100.2)*100*.20 + price3
+	totalPrice3 := (price/100.2)*100*.20 + price3
 	return totalPrice3
 }
