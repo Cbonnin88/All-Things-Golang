@@ -9,6 +9,7 @@ func main() {
 	fmt.Println(" Go calculator")
 	cmd := readLine("Enter command: [+]add, [-]subtract, [*]multiply, [/]divide: ")
 	fmt.Println(cmd)
+
 	switch cmd {
 	case "+":
 		num1, num2 := getUserNumbers()

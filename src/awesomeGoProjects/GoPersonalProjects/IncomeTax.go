@@ -22,7 +22,7 @@ func incomeTax(income, familyPart float32) (float32, float32) {
 
 func main() {
 	var myIncome, myFamilyPart float32
-	myIncome = 55000
+	myIncome = 54000
 	myFamilyPart = 3.0
 
 	var myMoney float32
