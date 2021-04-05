@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	country := "France"
 	countryAddress := &country
 
