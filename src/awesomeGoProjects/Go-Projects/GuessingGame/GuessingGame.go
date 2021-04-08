@@ -17,7 +17,7 @@ func guessingGame(randomNum int) {
 
 	for {
 		fmt.Println("Choose a number between one and ten")
-		fmt.Scan(&guess)
+		_, _ = fmt.Scan(&guess)
 		if guess == randomNum {
 			fmt.Printf("Great guess, it took you %d tries", try)
 			break
