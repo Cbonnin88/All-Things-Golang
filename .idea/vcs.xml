@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/fyne.io/fyne/v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/Cbonnin88/JavaScript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/boombuler/barcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/jung-kurt/gofpdf" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/phpdave11/gofpdi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/ruudk/golang-pdf417" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/golang.org/x/image" vcs="Git" />
   </component>
 </project>
