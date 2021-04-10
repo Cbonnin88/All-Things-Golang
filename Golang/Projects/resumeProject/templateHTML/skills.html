@@ -1,0 +1,8 @@
+<div class="skills">
+  <h2>Professional Skills</h2>
+  <ul>
+    {{ range $v := .Skills -}}
+    <li>{{$v}}</li>
+    {{end -}}
+  </ul>
+</div>

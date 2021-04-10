@@ -1,0 +1,23 @@
+<div class="experience">
+  <h2>Professional Experience</h2>
+  {{range .Experience}}
+  <div class="emp_experience">
+    <div class="exp_role">
+      <div><strong>{{.Position}}</strong></div>
+      <div class="experience_dates">
+        {{.Date}}
+      </div>
+    </div>
+    <div class="exp_entity">
+      {{.Company}} <span class="exp_location">
+        ({{.Location}})</span>
+    </div>
+  </div>
+
+  <ul class="exp_details">
+    {{ range .Responsibilities }}
+    <li class="exp_detail">{{- . -}}</li>
+    {{end}}
+  </ul>
+</div>
+{{end}}

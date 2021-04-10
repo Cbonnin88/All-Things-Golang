@@ -1,0 +1,77 @@
+{
+  "Name": "Christopher Bonnin",
+  "Position": "Go Developer",
+  "Email": "chrisbit.carrington@gmail.com",
+  "Website": "LinkedIN",
+  "Location": "Bussy Saint Georges, France",
+  "Mission": "Looking for an exciting opportunity as an Golang Developer",
+  "Skills": [
+    "Golang",
+    "JavaScript",
+    "SQL",
+    "Python",
+    "Docker"
+  ],
+  "Experience": [
+    {
+      "Position": "Golang Developer Intern",
+      "Company": "Le BonCoin",
+      "Date": "April 2021 - Current",
+      "Location": "Paris, France",
+      "Responsibilities": [
+        "Help create a new Microservice within Le Boncoin",
+        "Converting Java code into Golang Code"
+      ]
+    },
+    {
+      "Position": "Welcome Officer",
+      "Company": "Mobility Compliance Group",
+      "Date": "June 2020 - September 2020 ",
+      "Location": "Fontenay Sous Bois, France",
+      "Responsibilities": [
+        "Greeting visitors to the office and office management responsibilities",
+        "Back up for Human Resources and hiring team",
+        "Day to day care of Employees"
+      ]
+    },
+    {
+      "Position": "Receptionist",
+      "Company": "Altes Accueil",
+      "Date": "July 2017 - February 2020",
+      "Location": "Rueil-MalMaison, France",
+      "Responsibilities": [
+        "Welcoming Service for IFPEN",
+        "Basic catering and HR help ",
+        "Managerial Position and Team coordination"
+    ]
+    },
+    {
+      "Position": "English Instructor",
+      "Company": "Speaking Agency",
+      "Date": "April 2017 - Jul 2017",
+      "Location": "Paris, France",
+      "Responsibilities": [
+        "English language instruction",
+        "English language homework help for students",
+        "Helping English teacher devise learning methods",
+        "Participate in setting english language curriculum"
+      ]
+    }
+  ],
+  "Education": [
+    {
+      "University": "Lock Haven University",
+      "Date": "August 2006 - May 2011",
+      "Location": "Lock Haven, Pennsylvania, United States",
+      "Degree": "Bachelors Degree",
+      "Major": "Modern Languages"
+    }
+  ],
+  "Certification": [
+    "The fundamentals of Web Marketing - Google Workshop"
+],
+  "Languages": [
+    "English",
+    "French"
+  ]
+}
