@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	file := "The Raven.txt"
+	file := "/Users/chris/Go/Golang/Projects/ConvertPDF/Orea Cheesecake Recipe"
 
 	content, err := ioutil.ReadFile(file)
 
@@ -20,10 +20,8 @@ func main() {
 	pdf := gofpdf.New("P", "mm", "A4", "")
 	pdf.AddPage()
 	pdf.SetFont("Arial", "B", 14)
-
 	pdf.MultiCell(190, 5, string(content), "0", "0", false)
-	_ = pdf.OutputFileAndClose("The Revan.pdf")
+	_ = pdf.OutputFileAndClose("Orea Cheesecake.pdf")
 
-	fmt.Println("Your poem was transformed into a PDF")
-
+	fmt.Println("Your recipe was transformed into a PDF")
 }
