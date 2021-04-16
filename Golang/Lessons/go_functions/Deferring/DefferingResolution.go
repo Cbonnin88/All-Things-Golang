@@ -6,10 +6,10 @@ import (
 
 func takeHomePay(income, payAsYouGo float64) float64 {
 	taxRate := 0.22
-	netPayBeforeWithold := income - income*taxRate
-	defer fmt.Println("Net pay before withhold :", netPayBeforeWithold, "EUR")
-	beforeSource := netPayBeforeWithold - payAsYouGo
-	difference := income - netPayBeforeWithold
+	netPayBeforeWithhold := income - income*taxRate
+	defer fmt.Println("Net pay before withhold :", netPayBeforeWithhold, "EUR")
+	beforeSource := netPayBeforeWithhold - payAsYouGo
+	difference := income - netPayBeforeWithhold
 	fmt.Println("The difference between your Gross and net Pay is:", difference, "EUR")
 	return beforeSource
 }
