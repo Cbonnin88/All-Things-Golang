@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 // Loops in Go :
 func main() {
@@ -17,4 +20,13 @@ func main() {
 	for i, j := range rangeVar {
 		fmt.Println(i, j)
 	}
+	fmt.Println()
+
+	// Counting down with a While Loop:
+	fmt.Println("Lets begin the count down shall we?")
+	for i := 10; i > 0; i-- {
+		fmt.Println(i)
+		time.Sleep(time.Second)
+	}
+	fmt.Println("Lift Off")
 }
