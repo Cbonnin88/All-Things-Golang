@@ -3,28 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Please enter your desired yearly salary: ")
-	var salary int
-	_, err := fmt.Scan(&salary)
-	if err != nil {
-		return
-	}
-	switch salary {
-	case 45000:
-		fmt.Println("Here's our offer of 45K")
-	case 55000:
-		fmt.Println("Here's our offer of 55K")
-	case 65000:
-		fmt.Println("Here's our offer of 65K")
-	case 70000:
-		fmt.Println("Here's our offer of 70K")
-	default:
-		fmt.Println("We will get back to you with an offer in two days")
-	}
 
-	fmt.Println()
-	// Using a for loop in a Switch Statement with fallthrough:
-	for day := 1; day <= 12; day++ {
+	fmt.Println("On the", 1, "day of Christmas my true love sent to me:")
+	fmt.Println("A partridge in a pear tree")
+	fmt.Println("")
+
+	for day := 2; day <= 12; day++ {
 		fmt.Println("On the", day, "day of Christmas, my true love sent to me:")
 		switch day {
 		case 12:
@@ -58,13 +42,13 @@ func main() {
 			fmt.Println("Three french hens,")
 			fallthrough
 		case 2:
-			fmt.Println("Two turtle doves, and,")
+			fmt.Println("Two turtle doves, and")
 			fallthrough
 		case 1:
 			fmt.Println("A partridge in a pear tree")
 
-			// A fallthrough statement transfers control to the next case
-			// It may only be used as the final statement in a clause
 		}
+		fmt.Println("")
+
 	}
 }

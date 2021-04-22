@@ -25,12 +25,12 @@ func firstFunction() {
 	fmt.Println("This is my first function in Golang")
 }
 
-// a simple function with an argument
+// a simple function with a parameter
 func secondFunction(a int) {
 	fmt.Println(a)
 }
 
-// a simple function with several arguments
+// a simple function with several parameters
 func add(b int, c int) {
 	fmt.Println(b + c)
 }

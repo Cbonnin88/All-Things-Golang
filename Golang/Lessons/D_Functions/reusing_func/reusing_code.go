@@ -26,7 +26,6 @@ func goingBack() float32 {
 }
 
 func main() {
-
 	var a, b, c, d float32
 	a = .20
 	b = .17

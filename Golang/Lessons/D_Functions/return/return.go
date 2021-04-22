@@ -7,7 +7,12 @@ func newCar() string {
 	car1 := 25000
 	car2 := 50000
 	car3 := 75000
-	budget := 1
+	fmt.Print("Enter you budget amount: ")
+	var budget int
+	_, err := fmt.Scan(&budget)
+	if err != nil {
+		return ""
+	}
 
 	if car1 <= budget && budget < car2 {
 		choice = "The Lexus is in your price range"
@@ -16,13 +21,14 @@ func newCar() string {
 	} else if car3 <= budget && budget > car2 {
 		choice = "The Audi is in your price range"
 	} else {
-		choice = "These cars are too expensive"
+		choice = "These models are too expensive"
 	}
 
-	return choice
+	return choice // our return statement
 }
 
 func main() {
+	// Calling our newCar() function in the main
 	priceTag := newCar()
 	fmt.Print(priceTag)
 }

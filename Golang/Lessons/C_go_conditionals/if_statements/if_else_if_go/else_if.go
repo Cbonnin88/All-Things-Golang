@@ -20,5 +20,4 @@ func main() {
 	} else {
 		fmt.Println("Do you have points ?")
 	}
-
 }
