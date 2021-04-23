@@ -2,14 +2,15 @@ package main
 
 import "fmt"
 
-// Sprint and Sprintln format Strings
-/* Example:
-grade := 100
-compliment := "Great job!
-teacherSays := fmt.Sprint("You scored a", grade, "on the test!", compliment
-Prints : You scored a 100 on the test! Great Job!*/
-
 func main() {
+
+	// Sprint format
+	grade := 100
+	compliment := "Great job!"
+	teacherSays := fmt.Sprint("You scored a ", grade, " on the test!", compliment)
+	fmt.Println(teacherSays)
+
+	// Sprintln format
 	salary := 35000
 	quote := "house"
 	coachSays := fmt.Sprintln("So you earn about", salary, "euros annually?,. No wonder you have a nice", quote)
