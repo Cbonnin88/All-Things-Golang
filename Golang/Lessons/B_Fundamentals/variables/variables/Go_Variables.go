@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	// Example of a simple String:
-	var a string
-	a = "This is an example of a simple string"
+
+	a := "This is an example of a simple string"
 	fmt.Println(a)
 
 	// Example of a simple Integer:
@@ -15,15 +15,15 @@ func main() {
 	fmt.Println("our second integer:", num2)
 
 	// Example of a simple float:
-	var dec = 32.2
-	var dec2 = 32.34
+	var dec float64 = 32.2
+	var dec2 float64 = 32.34
 	fmt.Println("Float 1:", dec, "\nFloat 2:", dec2)
 
 	// Example of a simple Boolean:
 	booleanValue := false
 	var aBoolean bool
 	fmt.Println("'aBoolean' variable will always be", aBoolean, "since we have not assigned our variable")
-	fmt.Println("'true' variable will give us", booleanValue)
+	fmt.Println("'booleanValue' variable will also give us", booleanValue)
 
 }
 

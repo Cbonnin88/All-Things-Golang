@@ -6,13 +6,14 @@ import (
 )
 
 // Loops in Go :
-func main() {
+func main() { //nolint:typecheck
 
 	// A simple Loop:
-	fmt.Println("Simple Loop from zero to five:")
+	fmt.Println("Simple incrementing Loop from zero to five:")
 	for x := 0; x <= 5; x++ {
 		fmt.Println(x)
 	}
+	fmt.Println("")
 
 	// For each or range Loop:
 	fmt.Println("Range Loops")
@@ -20,7 +21,7 @@ func main() {
 	for i, j := range rangeVar {
 		fmt.Println(i, j)
 	}
-	fmt.Println()
+	fmt.Println("")
 
 	// Counting down with a While Loop:
 	fmt.Println("Lets begin the count down shall we?")
