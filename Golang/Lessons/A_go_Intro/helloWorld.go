@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	fmt.Print("Hello There, this is my first go program")
 }
 

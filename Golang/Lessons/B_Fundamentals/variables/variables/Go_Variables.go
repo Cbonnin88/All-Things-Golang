@@ -25,6 +25,9 @@ func main() {
 	fmt.Println("'aBoolean' variable will always be", aBoolean, "since we have not assigned our variable")
 	fmt.Println("'booleanValue' variable will also give us", booleanValue)
 
+	// Example of the Modulus operator:
+	x := 82 % 20
+	fmt.Printf("The remainder is %v", x)
 }
 
 /* Go has 15 different numeric types that fall into the three categories:

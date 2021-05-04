@@ -7,7 +7,7 @@ type number int
 var a number
 var b int
 
-func main() {
+func main() { //nolint:typecheck
 	a = 120
 	b = 220
 

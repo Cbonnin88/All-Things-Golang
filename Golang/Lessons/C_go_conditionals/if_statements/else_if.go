@@ -2,10 +2,13 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	fmt.Print("Enter your current account balance: ")
 	var currentAccount int
-	fmt.Scan(&currentAccount)
+	_, err := fmt.Scan(&currentAccount)
+	if err != nil {
+		return
+	}
 
 	if currentAccount > 50000 {
 		fmt.Println("You are Platinum class member")
@@ -18,6 +21,6 @@ func main() {
 	} else if currentAccount < 10000 {
 		fmt.Println("you must have at least 10000 points to be a member")
 	} else {
-		fmt.Println("Do you have points ?")
+		fmt.Println("welcome to our points system")
 	}
 }

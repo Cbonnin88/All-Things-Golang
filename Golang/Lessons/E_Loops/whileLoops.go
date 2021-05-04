@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	num := 1
 	for num < 5 {
 		num += 3
