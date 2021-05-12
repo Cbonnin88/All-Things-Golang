@@ -4,9 +4,9 @@ import (
 	"fmt"
 )
 
-// Slices are a different data type than Arrays
+// a SLICE allows you to group together VALUES of the same TYPE
 
-func main() {
+func main() { //nolint:typecheck
 	// Slicing an Array:
 	var arr [5]int = [5]int{101, 202, 316, 412, 100} // an Array that we will slice
 	var slice1 []int = arr[:]                        // will print entire array

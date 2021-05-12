@@ -21,6 +21,30 @@ func main() {
 	default:
 		fmt.Println("We will get back to you with an offer in two days")
 	}
+	fmt.Println("")
+
+	// An example of a switch statement using a string:
+	fmt.Print("Please type in your desired article:")
+	var clothing string
+	_, err = fmt.Scan(&clothing)
+	if err != nil {
+		return
+	}
+
+	switch clothing {
+	case "shirt":
+		fmt.Println("Here's our collection of shirts")
+	case "shoes":
+		fmt.Println("Here's our shoe collection")
+	case "jeans":
+		fmt.Println("Here's our latest collection of jeans")
+	case "dress":
+		fmt.Println("Here's our summer dresses")
+	case "jacket":
+		fmt.Println("Here's our fall line up of jackets")
+	default:
+		fmt.Println("Sorry, we don't have that currently in stock")
+	}
 
 	fmt.Println()
 	// Using a for loop in a Switch Statement with fallthrough:
