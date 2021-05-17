@@ -7,6 +7,7 @@ func main() { //nolint:typecheck
 	var currentAccount int
 	_, err := fmt.Scan(&currentAccount)
 	if err != nil {
+		fmt.Print("Incorrect format")
 		return
 	}
 
