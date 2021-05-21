@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	slice1 := [][]int{
 		{10, 20},
 		{30, 40},
@@ -17,8 +17,9 @@ func main() {
 		{"Spain, Finland"},
 		{"Belgium, The Netherlands"},
 	}
+	fmt.Println("MultiDimensional Slice:")
 	for i := 0; i < len(slice2); i++ {
-		fmt.Println("MultiDimensional Slice 2: ", slice2[i])
+		fmt.Println( slice2[i])
 	}
 
 	// Creating an MD slice without the brackets:
@@ -36,4 +37,10 @@ func main() {
 		}
 		fmt.Print("\n")
 	}
+
+	// Creating an MD Slice with two different slices
+	city := []string{"London","Paris","Berlin","Washington DC"}
+	country := []string{"United Kingdom","France","Germany","United States"}
+	geo := [][]string{city,country}
+	fmt.Println(geo)
 }

@@ -10,7 +10,7 @@ type car struct {
 	new bool
 } */
 
-func main() {
+func main() { //nolint:typecheck
 	// This is an anonymous struct because it doesn't have a name, we are just created a struct with its fields:
 	car1 := struct {
 		model        string
