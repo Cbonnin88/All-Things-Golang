@@ -5,12 +5,18 @@ import (
 	"fmt"
 	"html/template"
 	"io/ioutil"
+	"log"
 	"os"
 )
 
 func main() {
 	out, err := os.Create("index.html")
-	defer out.Close()
+	defer func(out *os.File) {
+		err := out.Close()
+		if err != nil {
+			log.Fatal("file not found")
+		}
+	}(out)
 	check(err)
 
 	data := map[string]interface{}{}

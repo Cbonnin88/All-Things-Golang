@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// create a slice:
-	var num []int = []int{5, 10, 15, 20, 25, 30, 35, 40}
+	var num = []int{5, 10, 15, 20, 25, 30, 35, 40}
 	// using the range keyword
 	fmt.Println("Using the range keyword:")
 	for i, element := range num {

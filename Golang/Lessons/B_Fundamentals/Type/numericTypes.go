@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	// A numeric type represents sets of integer or floating point values
 	// With int we have unassigned and assigned values, signed values can be negative, unassigned can only be positive:
 

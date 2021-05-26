@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 
 	// With Go, it's possible to create your own Types:
 	// ** Side note: %T shows us the 'type' that is our value **

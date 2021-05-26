@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	// In Go we can convert types from on type to another
 	// Example :
 	var num1 int = 23 // num1 has been declared as an int, it can store a value of int

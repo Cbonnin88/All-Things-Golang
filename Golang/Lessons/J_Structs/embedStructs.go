@@ -17,7 +17,7 @@ type politician struct {
 	yearsInOffice int
 }
 
-func main() {
+func main() { //nolint:typecheck
 	p1 := politician{
 		person: person{
 			firstName: "Emmanuel",

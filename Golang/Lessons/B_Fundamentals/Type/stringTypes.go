@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	// A string type represents a set of string values
 	// A string value is a, possibly empty sequences of bytes
 
@@ -34,13 +34,13 @@ func main() {
 	for i, r := range word {
 		fmt.Println(i, r)
 	}
-	fmt.Println("\n")
+	fmt.Println("")
 	fmt.Println("using the %@x:")
 	// finding the hexadecimal
 	for i, v := range word {
 		fmt.Printf("at index position %d we have hex %#x\n", i, v)
 	}
-	fmt.Println("\n")
+	fmt.Println("")
 	fmt.Println("Changing the value of our string:")
 	word2 := "Car"
 	fmt.Printf("The orginal string is %v\n", word2)

@@ -13,7 +13,7 @@ type country struct {
 // We can also have an 'empty' Struct
 type empty struct{}
 
-func main() {
+func main() { //nolint:typecheck
 	France := country{
 		country:      "France",
 		capital:      "Paris",
@@ -43,7 +43,7 @@ func main() {
 	fmt.Println("An empty struct: ", empty{}, "\n")
 
 	// You can access the fields of the Struct with .field name:
-	fmt.Println("Accessing fields from our structs:\n")
+	fmt.Println("Accessing fields from our structs:")
 	fmt.Println("The official language of France : ", France.officialLang)
 	fmt.Println("The capital of Germany: ", Germany.capital)
 	fmt.Println("The only nordic country that uses the Euro: ", Finland.country)

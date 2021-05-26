@@ -9,18 +9,17 @@
     "Golang",
     "JavaScript",
     "SQL",
-    "Python",
     "Docker"
   ],
   "Experience": [
     {
       "Position": "Golang Developer Intern",
-      "Company": "Le BonCoin",
-      "Date": "April 2021 - Current",
-      "Location": "Paris, France",
+      "Company": "Azfalte",
+      "Date": "May 2021 - Current",
+      "Location": "Lille, France",
       "Responsibilities": [
-        "Help create a new Microservice within Le Boncoin",
-        "Converting Java code into Golang Code"
+        "Helping Create an API for Azfatle",
+        "Creating documentation for Azfatle API"
       ]
     },
     {
@@ -65,6 +64,13 @@
       "Location": "Lock Haven, Pennsylvania, United States",
       "Degree": "Bachelors Degree",
       "Major": "Modern Languages"
+    },
+    {
+      "University": "AFPA Champs sur marne",
+      "Date": "October 2020 - July 2021",
+      "Location": "Champs sur Marne, France",
+      "Degree": "Bac +3",
+      "Major": "Concepteur Développeur d'applications"
     }
   ],
   "Certification": [
