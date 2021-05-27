@@ -3,18 +3,18 @@ package main
 import "fmt"
 
 func main() {
+	// Everything in Go is passed by VALUE
 	firstFunction()
 	secondFunction(100)
 	add(10, 20)
-
-	answer := multiply(100, 200)
-	fmt.Println(answer)
+	unlimited(2,3,4,5,6,7,8,9,10,11,12)
+	multiply(100, 200)
 
 	ans1, ans2 := math(100, 1200)
-	fmt.Println(ans1, ans2)
+	fmt.Println("Returning multiple values:",ans1, ans2)
 
 	ans3, ans4 := math2(12, 24)
-	fmt.Println(ans3, ans4)
+	fmt.Println("Labeling return values:",ans3, ans4)
 
 	def1, def2 := deferring(10, 30)
 	fmt.Println(def1, def2)
@@ -27,17 +27,22 @@ func firstFunction() {
 
 // a simple function with a parameter
 func secondFunction(a int) {
-	fmt.Println(a)
+	fmt.Println("this is a function with a parameter:",a)
 }
 
 // a simple function with several parameters
 func add(b int, c int) {
-	fmt.Println(b + c)
+	fmt.Println("Multiple parameters that do addition:",b + c)
+}
+
+// a simple function with unlimited parameters
+func unlimited(num...int){
+	fmt.Println("with unlimited parameters:",num)
 }
 
 // return a value
 func multiply(x int, y int) int {
-	fmt.Println(x * y)
+	fmt.Println("Returning a value:",x * y)
 	return x * y
 }
 
