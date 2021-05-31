@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+func main() {
+	// Calling our newCar() function in the main
+	priceTag := newCar()
+	fmt.Print(priceTag)
+}
+
 func newCar() string {
 	var choice string
 	car1 := 25000
@@ -11,24 +17,17 @@ func newCar() string {
 	var budget int
 	_, err := fmt.Scan(&budget)
 	if err != nil {
-		return ""
 	}
 
-	if car1 <= budget && budget < car2 {
+	switch {
+	case car1 <= budget && budget < car2:
 		choice = "The Lexus is in your price range"
-	} else if car2 <= budget && budget < car3 {
+	case car2 <= budget && budget < car3:
 		choice = "The Ferrari is in your price range"
-	} else if car3 <= budget && budget > car2 {
+	case car3 <= budget && budget > car2:
 		choice = "The Audi is in your price range"
-	} else {
+	default:
 		choice = "These models are too expensive"
 	}
-
 	return choice // our return statement
-}
-
-func main() {
-	// Calling our newCar() function in the main
-	priceTag := newCar()
-	fmt.Print(priceTag)
 }

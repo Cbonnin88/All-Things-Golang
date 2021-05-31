@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func main() { //nolint:typecheck
 	// Everything in Go is passed by VALUE
 	firstFunction()
 	secondFunction(100)
