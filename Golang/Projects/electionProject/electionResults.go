@@ -21,7 +21,10 @@ func main() {
 
 	fmt.Print("\nEnter Candidates first round score: ")
 	var firstRound int
-	fmt.Scan(&firstRound)
+	_ , err := fmt.Scan(&firstRound)
+	if err != nil {
+		return
+	}
 
 	scanner3 := bufio.NewScanner(os.Stdin)
 	fmt.Print("\nEnter second candidates' full name: ")
@@ -50,5 +53,4 @@ func main() {
 	case firstRound2 >= winner:
 		fmt.Printf("\n%v of %v has won the election", fullName2, party2)
 	}
-
 }

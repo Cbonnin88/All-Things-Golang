@@ -20,7 +20,7 @@ func main() { //nolint:typecheck
 }
 /*
 A closure is a special type of anonymous function that references variables declared outside of the
-function itself. It's similar to acessing global variables which are available before the declaration of the
+function itself. It's similar to accessing global variables which are available before the declaration of the
 function
 */
 

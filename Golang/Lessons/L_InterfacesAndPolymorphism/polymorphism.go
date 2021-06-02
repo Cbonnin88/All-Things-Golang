@@ -46,12 +46,12 @@ func main() { //nolint:typecheck
 
 	ceo1 := ceo{
 		employee: employee{ // our embedded struct
-			firstName: "Alcina",
-			lastName:  "Dimitrescu",
+			firstName: "Alice",
+			lastName:  "Martin",
 			Title:		"Lady",
 			grade:		11,
 			salary:     100000000,
-			motto:		"You stupid man-thing!!",
+			motto:		"I'm the boss",
 			isWorking:   true,
 		},
 		isCEO: true,
