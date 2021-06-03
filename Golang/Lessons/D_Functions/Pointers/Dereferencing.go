@@ -35,6 +35,17 @@ func main() { //nolint:typecheck
 	replace := &toReverse
 	*replace = changeValue2("onions")
 	fmt.Println("But I hate",toReverse)
+	fmt.Println("")
+
+	//Example 5:
+	x := 23.4
+	fmt.Println("x before:",&x)
+	fmt.Println("x before: ",x)
+	boo(&x)
+	fmt.Println("x after:",&x)
+	fmt.Println("x after:",x)
+
+
 
 }
 
@@ -45,4 +56,13 @@ func changeValue(str *string) {
 func changeValue2(str string) string {
 	str = "onions"
 	return str
+}
+
+func boo(y *float64) {
+	fmt.Println("y before:",y)
+	fmt.Println("y before:",*y)
+	*y = 234.567
+	fmt.Println("y after:",y)
+	fmt.Println("y after:",*y)
+
 }
