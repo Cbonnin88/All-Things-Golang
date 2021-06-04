@@ -16,36 +16,16 @@ type polygon interface {
 }
 
 // declaring our structs:
-type rectangle2 struct {
-	width 		float64
-	height 		float64
-	isAShape	bool
-	sides		int
-}
-
 type line struct {
 	radius float64
 	isAShape bool
+	sides	 int
 }
 
 func main() { //nolint:typecheck
-	r2 := rectangle2{width: 5,height: 10, isAShape: true, sides: 4}
-	// l := line{0, false},
-	Calculate2(r2)
-	// Calculate2(l), this will print 'main.line'
+	 l := line{0, false, 0}
+	 Calculate2(l)
 }
-
-func (r rectangle2) area2() float64 {
-	fmt.Println("the area of the rectangle:")
-	return r.height * r.width
-}
-
-
-func (r rectangle2) parameter2() float64 {
-	fmt.Println("The parameter of the rectangle:")
-	return 2 * r.width + 2 * r.height
-}
-
 func (l line) area2() float64 {
 	fmt.Println("The area of a line:")
 	return math.Pi * l.radius * l.radius
@@ -56,13 +36,12 @@ func (l line) parameter2() float64 {
 	return 2 * math.Pi * l.radius
 }
 
-func (r rectangle2) Getsides() int {
+func (l line) Getsides() int {
 	fmt.Println("The number of sides a rectangle has:")
-	return r.sides
+	return l.sides
 }
 
 func Calculate2 (s shape2) {
-
 	// Type assertion
 	 rect := s.(polygon)
 	 fmt.Printf("My type is: %T",rect)
@@ -70,6 +49,8 @@ func Calculate2 (s shape2) {
 }
 
 /*
+**Assertions are for interface types**
+
 We can also use type assertion via an 'if' statement:
 if rect, ok := s.(line); ok {
 	fmt.Println(rect.parameter2())

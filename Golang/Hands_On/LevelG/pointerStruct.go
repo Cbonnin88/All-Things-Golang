@@ -22,7 +22,7 @@ func main() { //nolint:typecheck
 	fmt.Println("")
 
 	changeMe(&p1)
-	
+
 	fmt.Println("After:")
 	fmt.Println(p1)
 
