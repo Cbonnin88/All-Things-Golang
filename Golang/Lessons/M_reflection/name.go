@@ -14,13 +14,6 @@ import (
 		structs
 */
 
-type car struct {
-	drive 	string
-	doors	int
-	color   string
-	isNew	bool
-}
-
 type empty struct {}
 
 func main() { //nolint:typecheck
