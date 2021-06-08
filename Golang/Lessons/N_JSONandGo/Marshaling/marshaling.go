@@ -15,6 +15,7 @@ type lord struct {
 	Motto		[]string
 }
 
+//nolint:funlen
 func main() {
 	/* Marshaling is the process of transforming the memory representation of an object to a data format
 	suitable for storage or transmission
@@ -77,6 +78,4 @@ func main() {
 	}
 
 	fmt.Println(string(bs))
-
-
 }
