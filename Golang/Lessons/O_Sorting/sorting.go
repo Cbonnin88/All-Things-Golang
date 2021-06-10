@@ -25,5 +25,4 @@ func main() {
 	fmt.Println("our original slice:",slice3)
 	sort.Float64s(slice3)
 	fmt.Println("Our sorted slice:",slice3)
-
 }

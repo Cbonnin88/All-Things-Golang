@@ -20,7 +20,7 @@ func main() {
 	/* Marshaling is the process of transforming the memory representation of an object to a data format
 	suitable for storage or transmission
 
-	In other words: Marshaling is encoding the data*/
+	In other words: Marshaling is encoding the data/ turning ito JSON data*/
 
 	h1 := lord {
 		FirstName:  "Karl",
