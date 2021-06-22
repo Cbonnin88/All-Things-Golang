@@ -7,12 +7,18 @@ import "fmt"
 func main() {
 	fmt.Println("Emilie, Jordan et Seb veut t'écouter dire quoi?")
 	var answer string
-	fmt.Scan(&answer)
+	_, err := fmt.Scan(&answer)
+	if err != nil {
+		fmt.Println(err)
+	}
 	fmt.Print("\n")
 
 	fmt.Println("jusqu'à?")
 	var response string
-	fmt.Scan(&response)
+	_, err2 := fmt.Scan(&response)
+	if err != nil {
+		fmt.Println(err2)
+	}
 	fmt.Print("\n")
 
 	fmt.Println("Piratage en cours.... 80% restant...")
