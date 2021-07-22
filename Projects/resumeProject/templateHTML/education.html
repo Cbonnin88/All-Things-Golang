@@ -1,0 +1,9 @@
+<div class="Education">
+  <h2>Education</h2>
+   {{range .Education}}
+  <p class="uni">{{.University}}</p>
+  <p class="location">{{.Location}}</p>
+  <p class="dates">Dates: {{.Date}}</p>
+  <p class="degree">{{.Degree}}: {{.Major}}</p>
+</div>
+{{end}}
