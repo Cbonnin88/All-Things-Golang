@@ -9,7 +9,7 @@ import (
 
 const (
 	db_user = "root"
-	db_pwd = "Jujuetchris1989!"
+	db_pwd = ""
 	db_addr = "127.0.0.1"
 	db_name = "GolangSql"
 )
