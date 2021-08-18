@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var bookPrice1 float32 = bookStore01(8.79)
+	var bookPrice1 = bookStore01(8.79)
 
 	var publisher, writer, artist, title string
 	title = "Mr.GoToSleep"
@@ -26,7 +26,7 @@ func main() {
 	pageNumber = 160
 	grade = 9.0
 
-	var bookPrice2 float32 = bookStore02(21.98)
+	var bookPrice2 = bookStore02(21.98)
 
 	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice2)
 
@@ -38,7 +38,7 @@ func main() {
 	pageNumber = 776
 	grade = 9.0
 
-	var bookPrice3 float32 = bookStore03(45.56)
+	var bookPrice3 = bookStore03(45.56)
 
 	fmt.Printf("%v was written by %v and drawn by %v.The publishing house is %v,.This book was written in %d and it has %d pages. The book gets a %.f because it is a used copy. The price for this book is %.2f euros, VAT included\n\n", title, writer, artist, publisher, year, pageNumber, grade, bookPrice3)
 }

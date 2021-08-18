@@ -39,3 +39,4 @@ func main() {
 	w.Resize(fyne.NewSize(500, 400))
 	w.ShowAndRun() // running the GUI
 }
+

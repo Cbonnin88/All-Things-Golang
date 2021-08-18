@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/crypto/bcrypt"
+
+
 )
 
 
 func main() {
 	pwd := `catfood1989`
-	bs, err := bcrypt.GenerateFromPassword([]byte(pwd), bcrypt.MinCost)
+	bs, err := GenerateFromPassword([]byte(pwd), MinCost)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -17,7 +18,7 @@ func main() {
 	fmt.Println("")
 
 	loginPwd := `catfood1989`
-	err = bcrypt.CompareHashAndPassword(bs, []byte(loginPwd))
+	err = CompareHashAndPassword(bs, []byte(loginPwd))
 	if err != nil {
 		fmt.Println("INCORRECT PASSWORD")
 		return
