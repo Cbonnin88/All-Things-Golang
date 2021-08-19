@@ -9,7 +9,8 @@ import (
 func main() {
 	// I'm opening up a database connection using sql.Open
 	// The database is called 'golangDB'
-	db, err := sql.Open("mysql", "root:Jujuetchris1989!@tcp("+
+	// NOT the actual password for my database
+	db, err := sql.Open("mysql", "root:pwd@tcp("+
 		"localhost:3306)/university_records")
 	if err != nil {
 		f.Println("Encountered error validating sql.Open arguments")
@@ -29,7 +30,7 @@ func main() {
 	}
 
 	// Here I am inserting data into my university records:
-	insert, err := db.Query("INSERT INTO Students(StudentID, FirstName, LastName, Age, Major) VALUES(10,'Alcina', 'Dimitrescu',44, 'Biology');")
+	insert, err := db.Query("INSERT INTO Students(StudentID, FirstName, LastName, Age, Major) VALUES(11,'Ethan', 'Winters', 36, 'History');")
 	if err != nil {
 		panic(err.Error())
 	}
