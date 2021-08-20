@@ -46,8 +46,8 @@ func main() {
 		panic(err.Error())
 	}
 
-	log.Println(studentInfo.FirstName)
-	log.Println(studentInfo.LastName)
-	log.Println(studentInfo.Age)
-	log.Println(studentInfo.Major)
+	log.Println(":", studentInfo.FirstName)
+	log.Println(":", studentInfo.LastName)
+	log.Println(":", studentInfo.Age)
+	log.Println(":", studentInfo.Major)
 }
