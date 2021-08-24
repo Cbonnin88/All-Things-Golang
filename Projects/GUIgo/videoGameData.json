@@ -1,0 +1,110 @@
+[
+  {
+    "title": "Resident Evil",
+    "id": 1001,
+    "console" : "Playstation",
+    "original_lan": "jp",
+    "release_date": "1996-03-22",
+    "rating": 10,
+    "overview" : "A series of bizarre murders have occurred on the outskirts[citation needed] of Raccoon City, with signs of cannibalism on the victims' remains. The Raccoon Police Department's Special Tactics And Rescue Service (S.T.A.R.S.) are assigned to investigate the murders. S.T.A.R.S. is divided into two teams: Alpha and Bravo. Bravo Team is sent first, but after contact with them is lost, Alpha Team is sent to investigate their disappearance."
+  },
+  {
+    "title" : "Parasite Eve",
+    "id" : 1002,
+    "console" : "Playstation",
+    "original_lan" : "jp",
+    "release_date" : "1998-03-29",
+    "rating" : 8,
+    "overview" : "Follow New York City police officer Aya Brea over a six-day span in 1997 as she attempts to stop the Eve, a woman who plans to destroy the human race through spontaneous human combustion."
+  },
+  {
+    "title" : "Primal",
+    "id" : 1003,
+    "console" : "Playstation 2",
+    "original_lan" : "en",
+    "release_date": "2003-03_25",
+    "rating" : 7,
+    "overview": "The battle to save the outside world starts within as Jen Tate, a young woman of our world, faces the demons of alternate planes and discovers her own supernatural origin. In Oblivion, there are four distinct realms, each occupied by a demon race. Two are aligned with order and two with chaos. But the scales of balance are overthrown, and chaos is engulfing Oblivion."
+  },
+  {
+    "title" : "Buffy the Vampire Slayer",
+    "id": 1004,
+    "console": "Xbox",
+    "original_lan": "en",
+    "release_date": "2002-08-18",
+    "rating" : 7,
+    "overview": "Buffy must stop the master from achieve his goal of turning earth into a hellish realm"
+  },
+  {
+    "title": "Fallout 4",
+    "id": 1005,
+    "console": "Xbox One, Playstation 4",
+    "original_lan": "en",
+    "release_date": "2015-11-10",
+    "rating": 10,
+    "overview": "The story begins in 2077 in Sanctuary Hills, located near Concord, Massachusetts. The player character is at home with their spouse (Nate or Nora depending on the player character's gender), their son Shaun, and Codsworth, a robotic butler. A Vault-Tec representative admits the family into Vault 111, the local fallout shelter. Moments later, a news bulletin warns of an incoming nuclear attack. As the detonation occurs, the family evacuates to the Vault, where they are tricked into entering cryogenic tubes and frozen alive. After an unknown number of years, they are reawakened by two strangers, who murder the player's spouse and kidnap Shaun. The player is put back into cryogenic sleep and awakens again when the life support system malfunctions. The player, nicknamed the \"Sole Survivor\" of Vault 111, vows to avenge their spouse's death and find Shaun."
+  },
+  {
+    "title": "Assassins Creed Origins",
+    "id": 1006,
+    "console": "Xbox One, Playstation 4",
+    "original_lan": "en",
+    "release_date": "2017-10-27",
+    "rating": 10,
+    "overview": "n 49 BC, Bayek, a Medjay charged with protecting the Siwa Oasis, is abducted along with his son Khemu by a group of masked men and taken to an underground vault in the Temple of Amun. They give Bayek a dormant Piece of Eden and demand that he use it to open a secret vault. Khemu helps Bayek escape. While struggling with one of the masked men, Bayek inadvertently kills Khemu. One year later, in 48 BC, Bayek has exiled himself to track down the five masked men to take his revenge. After eliminating two targets, Bayek heads for Alexandria to meet his wife Aya. Aya reveals that there is only one target left. Bayek identifies the Royal Scribe Eudoros as the last target, but he is disturbed by Eudoros' last words, which imply there are more masked men. Aya directs Bayek to her friend Apollodorus for more information. Apollodorus introduces him to Cleopatra, who confirms that the masked men are members of the Order of the Ancients, which ousted her from the throne and seeks to control Egypt using Ptolemy as their puppet."
+  },
+  {
+    "title": "Elders Scroll : Skyrim",
+    "id": 1007,
+    "console": "Xbox One, Playstation 4, Playstation 3, Xbox 360",
+    "original_lan": "en",
+    "release_date": "2011-11-11",
+    "rating": 10,
+    "overview": "The execution of the player character by the Imperials in Helgen, a small settlement in Skyrim's south, is interrupted when Alduin starts laying waste to the village. The player manages to escape through the tunnels underneath the keep, and heads to the nearby village of Riverwood, whose inhabitants ask the player to inform the Jarl of Whiterun, a large town to the north, of the dragon attack. After meeting with Jarl Balgruuf, and retrieving a tablet with information about the dragons from a nearby barrow on his behalf, the player kills a small dragon which attacks nearby and absorbs its soul. After \"shouting\", the player is informed that they must be Dragonborn, and is soon summoned by the Greybeard monks. After a long journey and climb up the Throat of the World, the tallest mountain in Tamriel and home of the Greybeards, the Dragonborn is informed by Arngeir of their heritage and role in stopping Alduin, and begins their training."
+  },
+  {
+    "title": "Resident Evil Village",
+    "id": 1008,
+    "console": "Playstation 5",
+    "original_lan": "jp",
+    "release_date": "2021-05-07",
+    "rating": 9,
+    "overview": "is set three years after the events of Resident Evil 7, largely on the day of February 9, 2021.[14][4] Ethan Winters returns as the protagonist.[15] Ethan has been living with his wife Mia and 6-month-old daughter Rosemary when Chris Redfield – the protagonist of previous Resident Evil entries – and his men suddenly appear, murder his wife in cold blood, and kidnap him and his baby daughter, bringing them to a mysterious European village."
+  },
+  {
+    "title": "Tales of Arise",
+    "id": 1009,
+    "console": "Playstation 5, Xbox Series X/S",
+    "original_lan": "jp",
+    "release_date": "2021-09-10",
+    "rating": 10,
+    "overview": "Arise takes place in a setting divided between the medieval world of Dahna and the advanced world of Rena. Rena's superior technological and magical advancement cause it to hold power over Dahna, taking its resources and treating its people as slaves. The protagonists are a young man, Alphen, native to Dahna, and a young woman, Shionne, from Rena, who end up travelling together.[4] They are later joined by other characters who also hail from both Dahna and Rena.\n\n"
+  },
+  {
+    "title": "Final Fantasy XVI",
+    "id": 1010,
+    "console": "Playstation 5",
+    "original_lan": "jp",
+    "release_date": "N/A",
+    "rating": 0,
+    "overview": "Final Fantasy XVI is an action role-playing game set in the fantasy world of Valisthea, where the people live comfortably thanks to mountains of crystal called the Mothercrystals. The world is controlled by six factions: the Grand Duchy of Rosaria, the Holy Empire of Sanbreque, the Kingdom of Waloed, the Dhalmekian Republic, the Iron Kingdom, and the Crystalline Dominion. A central part of the plot is Eikons, summoned monsters controlled by or manifesting through humans called Dominants."
+  },
+  {
+    "title": "Dying light 2 Stay Human",
+    "id": 1011,
+    "console": "Playstation 5, Xbox Series X",
+    "original_lan": "en",
+    "release_date": "2021-12-07",
+    "rating": 9,
+    "overview": "You play as Aiden Caldwell, a freelance runner who handles various odd jobs and tasks for the citizens of The City, one of the last human settlements in Europe. Following the events of Dying Light's post-game expansion, The Following, the former-protagonist Kyle Crane was infected with a new strain of the virus that turns people into the ravenous infected, and he unknowingly spread the disease throughout the world. After the global outbreak, modern civilization came to an end, pushing humanity into a new dark age."
+  },
+  {
+    "title": "Elden Ring",
+    "id": 1012,
+    "console": "Playstation 5, Xbox Series X",
+    "original_lan": "jp",
+    "release_date": "2022-01-12",
+    "rating": 0,
+    "overview": "Elden Ring takes place in the realm of the Lands Between, sometime after the destruction of the titular Elden Ring and the scattering of its shards, the Great Runes. Once graced by the Ring and the Erdtree which symbolizes its presence, the realm is now ruled over by the demigod offsprings of Queen Marika the Eternal, each possessing a shard of the Ring that corrupts and taints them with power. As a Tarnished — exiles from the Lands Between who lost the Ring's grace — summoned back after the Shattering, players must traverse the realm to ultimately find all the Great Runes, restore the Elden Ring, and become the Elden Lord."
+  }
+]
