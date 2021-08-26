@@ -9,6 +9,7 @@ import (
 	"fyne.io/fyne/v2/widget"
 	"io/ioutil"
 	"log"
+	"strconv"
 )
 
 type VideoGames struct {
@@ -56,7 +57,10 @@ func main() {
 
 	listView.OnSelected = func(id widget.ListItemID) {
 		contentText.TextStyle.Italic = true
-		contentText.Text = videoGames[id].Overview
+		contentText.TextStyle.Bold = true
+		contentText.Text = "ID number: " + strconv.Itoa(videoGames[id].ID) + "\n\n" + "Console: " + videoGames[id].Console + "\n\n" + "Original Language: " + videoGames[id].Language +
+			"\n\n" + "Release Date: " + videoGames[id].Release + "\n\n" + "Rating: " + strconv.Itoa(videoGames[id].Rating) +
+			"\n\n" + "Summary:\n" + videoGames[id].Overview
 	}
 
 	split := container.NewHSplit(
