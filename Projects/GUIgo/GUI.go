@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
 	"fyne.io/fyne/v2/container"
@@ -11,10 +10,6 @@ import (
 	"io/ioutil"
 	"log"
 )
-
-/*type GameResults struct {
-	Results []VideoGames `json:"results"`
-} */
 
 type VideoGames struct {
 	Title    string `json:"title"`
@@ -38,34 +33,40 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("%v/n", videoGames)
-	return
 
 	// Creating the Gui Window
 	a := app.New()
-	w := a.NewWindow("Login")
+	w := a.NewWindow("Video Game List")
 	lightTheme := theme.LightTheme() // changes the color theme from dark to light
 	a.Settings().SetTheme(lightTheme)
 	a.Settings().ThemeVariant()
 
-	// Creating a label for the GUI
-	hello := widget.NewLabel("Welcome to Bob's bank, ")
+	// Creating a list View for the GUI
+	listView := widget.NewList(func() int {
+		return len(videoGames)
+	}, func() fyne.CanvasObject {
+		return widget.NewLabel("label template")
+	}, func(id widget.ListItemID, object fyne.CanvasObject) {
+		object.(*widget.Label).Text = videoGames[id].Title
+	})
 
-	// creating a container for the content within the GUI
-	w.SetContent(container.NewVBox(
-		hello,
-		widget.NewButton("Click Here", func() { // Creates a button
-			hello.SetText("Bob's bank is an online banking app" +
-				"") // Sets a text when you use the button
-		}),
-		widget.NewButton("About Bob's Bank", func() {
-			hello.SetText("Our Mission :\n\nMaking Banking easier")
-		}),
-		widget.NewButton("Log out", func() { // Creates a quit button function
-			a.Quit()
-		})))
+	// Adding a callback function that updates our content:
+	contentText := widget.NewLabel("Please Select a Video Game")
+	contentText.Wrapping = fyne.TextWrapWord
+
+	listView.OnSelected = func(id widget.ListItemID) {
+		contentText.TextStyle.Italic = true
+		contentText.Text = videoGames[id].Overview
+	}
+
+	split := container.NewHSplit(
+		listView,
+		container.NewMax(contentText),
+	)
+	split.Offset = 0.5
+	w.SetContent(split)
 
 	// Resizing the GUI Window
-	w.Resize(fyne.NewSize(500, 400))
+	w.Resize(fyne.NewSize(1200, 900))
 	w.ShowAndRun() // running the GUI
 }

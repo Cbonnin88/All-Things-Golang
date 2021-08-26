@@ -6,7 +6,7 @@
     "original_lan": "jp",
     "release_date": "1996-03-22",
     "rating": 10,
-    "overview" : "A series of bizarre murders have occurred on the outskirts[citation needed] of Raccoon City, with signs of cannibalism on the victims' remains. The Raccoon Police Department's Special Tactics And Rescue Service (S.T.A.R.S.) are assigned to investigate the murders. S.T.A.R.S. is divided into two teams: Alpha and Bravo. Bravo Team is sent first, but after contact with them is lost, Alpha Team is sent to investigate their disappearance."
+    "overview" : "A series of bizarre murders have occurred on the outskirts of Raccoon City, with signs of cannibalism on the victims' remains. The Raccoon Police Department's Special Tactics And Rescue Service (S.T.A.R.S.) are assigned to investigate the murders. S.T.A.R.S. is divided into two teams: Alpha and Bravo. Bravo Team is sent first, but after contact with them is lost, Alpha Team is sent to investigate their disappearance."
   },
   {
     "title" : "Parasite Eve",
@@ -69,7 +69,7 @@
     "original_lan": "jp",
     "release_date": "2021-05-07",
     "rating": 9,
-    "overview": "is set three years after the events of Resident Evil 7, largely on the day of February 9, 2021.[14][4] Ethan Winters returns as the protagonist.[15] Ethan has been living with his wife Mia and 6-month-old daughter Rosemary when Chris Redfield – the protagonist of previous Resident Evil entries – and his men suddenly appear, murder his wife in cold blood, and kidnap him and his baby daughter, bringing them to a mysterious European village."
+    "overview": "is set three years after the events of Resident Evil 7, largely on the day of February 9, 2021.Ethan Winters returns as the protagonist.[15] Ethan has been living with his wife Mia and 6-month-old daughter Rosemary when Chris Redfield – the protagonist of previous Resident Evil entries – and his men suddenly appear, murder his wife in cold blood, and kidnap him and his baby daughter, bringing them to a mysterious European village."
   },
   {
     "title": "Tales of Arise",
@@ -78,7 +78,7 @@
     "original_lan": "jp",
     "release_date": "2021-09-10",
     "rating": 10,
-    "overview": "Arise takes place in a setting divided between the medieval world of Dahna and the advanced world of Rena. Rena's superior technological and magical advancement cause it to hold power over Dahna, taking its resources and treating its people as slaves. The protagonists are a young man, Alphen, native to Dahna, and a young woman, Shionne, from Rena, who end up travelling together.[4] They are later joined by other characters who also hail from both Dahna and Rena.\n\n"
+    "overview": "Arise takes place in a setting divided between the medieval world of Dahna and the advanced world of Rena. Rena's superior technological and magical advancement cause it to hold power over Dahna, taking its resources and treating its people as slaves. The protagonists are a young man, Alphen, native to Dahna, and a young woman, Shionne, from Rena, who end up travelling together. They are later joined by other characters who also hail from both Dahna and Rena."
   },
   {
     "title": "Final Fantasy XVI",
@@ -96,7 +96,7 @@
     "original_lan": "en",
     "release_date": "2021-12-07",
     "rating": 9,
-    "overview": "You play as Aiden Caldwell, a freelance runner who handles various odd jobs and tasks for the citizens of The City, one of the last human settlements in Europe. Following the events of Dying Light's post-game expansion, The Following, the former-protagonist Kyle Crane was infected with a new strain of the virus that turns people into the ravenous infected, and he unknowingly spread the disease throughout the world. After the global outbreak, modern civilization came to an end, pushing humanity into a new dark age."
+    "overview": "Aiden Caldwell, a freelance runner who handles various odd jobs and tasks for the citizens of The City, one of the last human settlements in Europe. Following the events of Dying Light, the former-protagonist Kyle Crane was infected with a new strain of the virus that turns people into the ravenous infected, and he unknowingly spread the disease throughout the world. After the global outbreak, modern civilization came to an end, pushing humanity into a new dark age."
   },
   {
     "title": "Elden Ring",
@@ -106,5 +106,23 @@
     "release_date": "2022-01-12",
     "rating": 0,
     "overview": "Elden Ring takes place in the realm of the Lands Between, sometime after the destruction of the titular Elden Ring and the scattering of its shards, the Great Runes. Once graced by the Ring and the Erdtree which symbolizes its presence, the realm is now ruled over by the demigod offsprings of Queen Marika the Eternal, each possessing a shard of the Ring that corrupts and taints them with power. As a Tarnished — exiles from the Lands Between who lost the Ring's grace — summoned back after the Shattering, players must traverse the realm to ultimately find all the Great Runes, restore the Elden Ring, and become the Elden Lord."
+  },
+  {
+    "title": "Control",
+    "id": 1013,
+    "console": "Playstation 4, Xbox One",
+    "original_lan": "en",
+    "release_data": "2019-08_27",
+    "rating": 8,
+    "overview": "In October 2019, Jesse Faden arrives at the Oldest House following a telepathic message from Polaris, seeking the whereabouts of her kidnapped brother Dylan. Inside the building, Jesse discovers the lifeless body of Zachariah Trench, and is instructed by Polaris to pick up his fallen Service Weapon. Jesse is translocated to the Astral Plane, where the Board immediately appoints her as the new director of the FBC in Trench's stead. Exiting Trench's office, Jesse is attacked by FBC agents possessed by an entity Jesse dubs \"the Hiss.\" Jesse learns that the entire Oldest House is under emergency lockdown following the Hiss's spread, and that everyone in the building has been possessed by the Hiss except those wearing Hedron Resonance Amplifiers (HRAs), devices built by missing Bureau scientist Dr. Casper Darling. Jesse agrees to aid the surviving Bureau agents in reclaiming the building and containing the Hiss, in exchange for seeking Dylan's whereabouts."
+  },
+  {
+    "title": "Assassins Creed : Valhalla",
+    "id": 1014,
+    "console": "Playstation 5, Xbox Series X/S",
+    "original_lan": "en",
+    "release_data": "2020-11-10",
+    "rating": 9,
+    "overview": "In AD 873, political pressures in Norway prompt Eivor Varinsdottir[e] and her/his adoptive older brother, Sigurd Styrbjornsson, to lead their clan of Vikings to settle new lands in Anglo-Saxon England, as part of the Viking expansion across Europe."
   }
 ]
