@@ -8,6 +8,6 @@ import (
 func main() {
 	_, err := os.Open("goose")
 	if err != nil {
-		log.Panicln(err)
+		log.Panicln("NO FILE NAMED GOOSE")
 	}
 }

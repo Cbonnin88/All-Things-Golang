@@ -22,7 +22,7 @@ func main() {
 
 	file2, err := os.Open("cats")
 	if err != nil {
-		log.Println("err occurred", err) // logs our error to our log.txt that we created earlier, with a timestamp
+		log.Println(err) // logs our error to our log.txt that we created earlier, with a timestamp
 	}
 	defer func(file2 *os.File) {
 		err := file2.Close()

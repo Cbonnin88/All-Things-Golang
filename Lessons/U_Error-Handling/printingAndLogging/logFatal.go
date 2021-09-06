@@ -10,7 +10,7 @@ func main() {
 	defer foo()
 	_, err := os.Open("dogs")
 	if err != nil {
-		log.Fatalln(err) //
+		log.Fatalln("CANNOT FIND FILE") //
 	}
 }
 
