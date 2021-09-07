@@ -10,7 +10,7 @@ func main() {
 }
 
 func minus(num ...int) int {
-	var subtr int
+	subtr := 0
 	for _, v := range num {
 		subtr = v - subtr
 	}
