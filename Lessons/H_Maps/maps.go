@@ -24,21 +24,21 @@ func main() { //nolint:typecheck
 
 	// changing a map value
 	fmt.Println("Changing a map value:")
-	fmt.Println("Our original map:",countryCapital)
+	fmt.Println("Our original map:", countryCapital)
 	countryCapital["Japan"] = "Kyoto"
-	fmt.Println("Our new map: ", countryCapital)
+	fmt.Println("Our new map:", countryCapital)
 	fmt.Println("")
 
 	// Adding a value
 	fmt.Println("Add a value to a map:")
-	fmt.Println("Our original map:",countryCapital)
+	fmt.Println("Our original map:", countryCapital)
 	countryCapital["United States"] = "Washington DC"
 	fmt.Println("Our new map: ", countryCapital)
 	fmt.Println("")
 
 	// Deleting a value
 	fmt.Println("Deleting a value in a map:")
-	fmt.Println("Our original map:",countryCapital)
+	fmt.Println("Our original map:", countryCapital)
 	delete(countryCapital, "United States")
 	fmt.Println("Our new map without the United States: ", countryCapital)
 	fmt.Println("")
@@ -47,16 +47,16 @@ func main() { //nolint:typecheck
 	val, ok := countryCapital["Germany"]
 	fmt.Println("Does the value 'Germany' exist ?: ", val, ok)
 	val, ok = countryCapital["Russia"]
-	fmt.Println("Does the value 'Russia' exist ?: ",val, ok)
+	fmt.Println("Does the value 'Russia' exist ?: ", val, ok)
 	fmt.Println("")
 
 	// Using an "if" statement to check if a value exists
 	if val, ok := countryCapital["Finland"]; ok {
-		fmt.Println(val,"is a value")
+		fmt.Println(val, "is a value")
 	} else {
 		fmt.Println("No value exists")
 	}
-		fmt.Println("")
+	fmt.Println("")
 
 	// using the len() method for maps
 	fmt.Println("This map has", len(countryCapital), "keys inside of it")

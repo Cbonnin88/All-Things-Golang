@@ -54,7 +54,6 @@ func main() {
 	// Adding a callback function that updates our content:
 	contentText := widget.NewLabel("Please Select a Video Game")
 	contentText.Wrapping = fyne.TextWrapWord
-
 	listView.OnSelected = func(id widget.ListItemID) {
 		contentText.TextStyle.Italic = true
 		contentText.TextStyle.Bold = true
@@ -67,6 +66,7 @@ func main() {
 		listView,
 		container.NewMax(contentText),
 	)
+
 	split.Offset = 0.5
 	w.SetContent(split)
 

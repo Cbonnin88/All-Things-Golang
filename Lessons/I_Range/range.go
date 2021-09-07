@@ -20,7 +20,7 @@ func main() {
 			if element == element2 && j > i {
 				// Prints out the duplicate numbers 10 and 25 in our slice
 				fmt.Println("\nThe duplicate number in our slice is: ", element)
-				fmt.Println(doubleNum, "\n") //nolint:govet
+				fmt.Println(doubleNum, "\n")
 				// prints out our slice
 			}
 		}

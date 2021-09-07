@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 
 	// An empty interface may hold values of any type
 	// Empty interfaces are used by code that handles values of unknown type
@@ -19,9 +19,8 @@ func main() { //nolint:typecheck
 	var o interface{}
 	fmt.Println(o)
 
-
 }
 
-func describe(i interface{}){
-	fmt.Printf("(%v, %T)\n", i, i )
+func describe(i interface{}) {
+	fmt.Printf("(%v, %T)\n", i, i)
 }

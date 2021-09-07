@@ -9,7 +9,7 @@ import (
 func main() {
 	pdf := gofpdf.New(gofpdf.OrientationPortrait, gofpdf.UnitPoint, gofpdf.PageSizeLetter, "")
 	w, h := pdf.GetPageSize()
-	fmt.Printf("width=%v, height=%v\n", w, h) //nolint:forbidigo
+	fmt.Printf("width=%v, height=%v\n", w, h)
 	pdf.AddPage()
 
 	pdf.MoveTo(0, 0)
@@ -54,7 +54,7 @@ func drawGrid(pdf *gofpdf.Fpdf) {
 		_, lineHt := pdf.GetFontSize()
 		pdf.Text(x, lineHt, fmt.Sprintf("%d", int(x)))
 	}
-	for y := 0.0; y < h; y += h / 20.0 { //nolint:wsl
+	for y := 0.0; y < h; y += h / 20.0 {
 		pdf.Line(0, y, w, y)
 		pdf.Text(0, y, fmt.Sprintf("%d", int(y)))
 	}
