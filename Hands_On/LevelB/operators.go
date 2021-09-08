@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	a := (32 == 32)
+	a := 32 == 32
 	b := 120 <= 100
 	c := 100 >= 99
 	d := 31 != 31

@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	var arr [5]int
 	arr[0] = 10
 	arr[1] = 20

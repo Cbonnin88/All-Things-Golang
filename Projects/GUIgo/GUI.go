@@ -12,7 +12,7 @@ import (
 	"strconv"
 )
 
-type VideoGames struct {
+type videoGames struct {
 	Title    string `json:"title"`
 	ID       int    `json:"id"`
 	Console  string `json:"console"`
@@ -29,7 +29,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	var videoGames []VideoGames
+	var videoGames []videoGames
 	err = json.Unmarshal(games, &videoGames)
 	if err != nil {
 		log.Fatal(err)

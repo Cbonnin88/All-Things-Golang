@@ -17,10 +17,10 @@ func TestTableSum(t *testing.T) {
 		results int
 	}
 	tests := []test{
-		test{[]int{11, 11}, 22},
-		test{[]int{22, 22}, 44},
-		test{[]int{33, 44, 55}, 132},
-		test{[]int{1, 2, 3, 4}, 10},
+		{[]int{11, 11}, 22},
+		{[]int{22, 22}, 44},
+		{[]int{33, 44, 55}, 132},
+		{[]int{1, 2, 3, 4}, 10},
 	}
 
 	for _, val := range tests {

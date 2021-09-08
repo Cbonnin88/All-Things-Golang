@@ -3,7 +3,7 @@ package main
 import "testing"
 
 func TestCalculator(t *testing.T) {
-	if Math(3) != 6 {
+	if math(3) != 6 {
 		t.Error("Expected 3 * 2 to equal 6")
 	}
 }
@@ -23,7 +23,7 @@ func TestTableCalculate(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		if output := Math(test.input); output != test.expected {
+		if output := math(test.input); output != test.expected {
 			t.Error("Test Failed: {} input, {} expected, received:{}", test.input, test.expected, output)
 		}
 	}

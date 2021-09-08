@@ -19,11 +19,11 @@ func TestTableMultiply(t *testing.T) {
 		answer int
 	}
 	tests := []test{
-		test{[]int{num1, num2}, ans},
-		test{[]int{num1, num2}, ans},
-		test{[]int{num1, num2}, ans},
-		test{[]int{num1, num2}, ans},
-		test{[]int{num1, num2}, ans},
+		{[]int{num1, num2}, ans},
+		{[]int{num1, num2}, ans},
+		{[]int{num1, num2}, ans},
+		{[]int{num1, num2}, ans},
+		{[]int{num1, num2}, ans},
 	}
 	for _, result := range tests {
 		data := multiply(result.input...)

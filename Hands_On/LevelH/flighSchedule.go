@@ -5,31 +5,31 @@ import (
 	"fmt"
 )
 
-type Flight struct {
-	FlightNum	 int    `json:"flight-num"`
-	Origin       string `json:"origin"`
-	Destination  string `json:"destination"`
-	Price		 int	`json:"price"`
-	Layover		 bool	`json:"layover"`
-	Ontime		 bool	`json:"ontime"`
+type flight struct {
+	FlightNum   int    `json:"flight-num"`
+	Origin      string `json:"origin"`
+	Destination string `json:"destination"`
+	Price       int    `json:"price"`
+	Layover     bool   `json:"layover"`
+	Ontime      bool   `json:"ontime"`
 }
 
 func main() {
-	flightOne := Flight{
-				FlightNum: 2234,
-				Origin: "JFK",
-				Destination: "CDG",
-				Price: 800,
-				Layover: true,
-				Ontime: true,
+	flightOne := flight{
+		FlightNum:   2234,
+		Origin:      "JFK",
+		Destination: "CDG",
+		Price:       800,
+		Layover:     true,
+		Ontime:      true,
 	}
-	flightTwo := Flight{
-				FlightNum: 1234,
-				Origin: "LHR",
-				Destination: "PHL",
-				Price: 1200,
-				Layover: false,
-				Ontime: false,
+	flightTwo := flight{
+		FlightNum:   1234,
+		Origin:      "LHR",
+		Destination: "PHL",
+		Price:       1200,
+		Layover:     false,
+		Ontime:      false,
 	}
 
 	b, err := json.MarshalIndent(flightOne, "", " ")

@@ -29,23 +29,21 @@ func main() { //nolint:typecheck
 	fmt.Println("and now I am learning", toChange)
 	fmt.Println("")
 
-	//Example 4:
+	// Example 4:
 	toReverse := "Tomatoes"
-	fmt.Println(toReverse,"are my favorite veggies")
+	fmt.Println(toReverse, "are my favorite veggies")
 	replace := &toReverse
 	*replace = changeValue2("onions")
-	fmt.Println("But I hate",toReverse)
+	fmt.Println("But I hate", toReverse)
 	fmt.Println("")
 
-	//Example 5:
+	// Example 5:
 	x := 23.4
-	fmt.Println("x before:",&x)
-	fmt.Println("x before: ",x)
+	fmt.Println("x before:", &x)
+	fmt.Println("x before: ", x)
 	boo(&x)
-	fmt.Println("x after:",&x)
-	fmt.Println("x after:",x)
-
-
+	fmt.Println("x after:", &x)
+	fmt.Println("x after:", x)
 
 }
 
@@ -59,10 +57,10 @@ func changeValue2(str string) string {
 }
 
 func boo(y *float64) {
-	fmt.Println("y before:",y)
-	fmt.Println("y before:",*y)
+	fmt.Println("y before:", y)
+	fmt.Println("y before:", *y)
 	*y = 234.567
-	fmt.Println("y after:",y)
-	fmt.Println("y after:",*y)
+	fmt.Println("y after:", y)
+	fmt.Println("y after:", *y)
 
 }

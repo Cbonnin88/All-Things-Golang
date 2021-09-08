@@ -18,7 +18,7 @@ func main() {
 		panic(err.Error())
 	}
 
-	// I am defering the close until after the main function has finished
+	// I am deferring the close until after the main function has finished
 	defer func(db *sql.DB) {
 		err := db.Close()
 		if err != nil {
