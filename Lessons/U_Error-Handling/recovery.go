@@ -4,7 +4,7 @@ import "fmt"
 
 /*
  Recover is a built-in function that regains control of a panicking goroutine.
- **Recover is only useful inside deferred functions**
+ ** Recover is only useful inside deferred functions **
 */
 
 func main() {

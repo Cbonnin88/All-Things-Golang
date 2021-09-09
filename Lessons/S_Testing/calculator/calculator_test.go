@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestCalculator(t *testing.T) {
 	if math(3) != 6 {
@@ -26,5 +29,17 @@ func TestTableCalculate(t *testing.T) {
 		if output := math(test.input); output != test.expected {
 			t.Error("Test Failed: {} input, {} expected, received:{}", test.input, test.expected, output)
 		}
+	}
+}
+
+func ExampleCalculator() {
+	fmt.Println(math(3))
+	// Output:
+	// 6
+}
+
+func BenchmarkCalculator(b *testing.B) {
+	for c := 0; c < b.N; c++ {
+		math(3)
 	}
 }

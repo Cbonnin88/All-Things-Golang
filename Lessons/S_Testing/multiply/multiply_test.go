@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -20,10 +21,6 @@ func TestTableMultiply(t *testing.T) {
 	}
 	tests := []test{
 		{[]int{num1, num2}, ans},
-		{[]int{num1, num2}, ans},
-		{[]int{num1, num2}, ans},
-		{[]int{num1, num2}, ans},
-		{[]int{num1, num2}, ans},
 	}
 	for _, result := range tests {
 		data := multiply(result.input...)
@@ -31,5 +28,16 @@ func TestTableMultiply(t *testing.T) {
 			t.Error("Expected:", result.answer, "Got:", data)
 		}
 	}
+}
 
+func ExampleMultiply() {
+	fmt.Println(multiply(num1, num2))
+	// Output:
+	// 0
+}
+
+func BenchmarkMultiply(b *testing.B) {
+	for m := 0; m < b.N; m++ {
+		multiply(num1, num2)
+	}
 }

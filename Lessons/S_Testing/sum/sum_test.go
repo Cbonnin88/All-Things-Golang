@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -28,5 +29,17 @@ func TestTableSum(t *testing.T) {
 		if num != val.results {
 			t.Error("Expected:", val.results, "\n\t\tGot:", num)
 		}
+	}
+}
+
+func ExampleSum() {
+	fmt.Println(sum(1, 1))
+	// Output
+	// 2
+}
+
+func BenchmarkSum(b *testing.B) {
+	for su := 0; su < b.N; su++ {
+		sum(2, 2)
 	}
 }
