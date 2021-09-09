@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	f "fmt"
 	_ "github.com/go-sql-driver/mysql"
+	"log"
 )
 
 func main() {
@@ -12,13 +13,13 @@ func main() {
 		"localhost:3306)/university_records")
 
 	if err != nil {
-		panic(err.Error())
+		log.Fatalln(err)
 	}
 
 	defer func(db *sql.DB) {
 		err := db.Close()
 		if err != nil {
-
+			log.Fatalln(err)
 		}
 	}(db)
 

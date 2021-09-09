@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	f "fmt" // referencing a package
 	_ "github.com/go-sql-driver/mysql"
+	"log"
 )
 
 func main() {
@@ -15,14 +16,14 @@ func main() {
 
 	//  Handle an error in case there's a problem with the connection
 	if err != nil {
-		panic(err.Error())
+		log.Println(err)
 	}
 
 	// Deferring the close until after the main function has finished
 	defer func(db *sql.DB) {
 		err := db.Close()
 		if err != nil {
-
+			log.Fatal(err)
 		}
 	}(db)
 

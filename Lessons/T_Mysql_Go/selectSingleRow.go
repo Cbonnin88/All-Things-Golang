@@ -23,13 +23,13 @@ func main() {
 		"localhost:3306)/university_records")
 
 	if err != nil {
-		panic(err.Error())
+		panic(err)
 	}
 
 	defer func(db *sql.DB) {
 		err := db.Close()
 		if err != nil {
-
+			log.Fatal(err)
 		}
 	}(db)
 
@@ -43,7 +43,7 @@ func main() {
 	err = db.QueryRow("SELECT FirstName, LastName, Age, Major FROM Students where StudentID = ?", id).Scan(&studentInfo.FirstName, &studentInfo.LastName,
 		&studentInfo.Age, &studentInfo.Major)
 	if err != nil {
-		panic(err.Error())
+		panic(err)
 	}
 
 	log.Println(":", studentInfo.FirstName)
