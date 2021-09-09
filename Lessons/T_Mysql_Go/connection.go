@@ -13,12 +13,12 @@ func main() {
 	db, err := sql.Open("mysql", "root:pwd@tcp("+
 		"localhost:3306)/university_records")
 
-	// Here I handle an error in case there's a problem with the connection
+	//  Handle an error in case there's a problem with the connection
 	if err != nil {
 		panic(err.Error())
 	}
 
-	// I am deferring the close until after the main function has finished
+	// Deferring the close until after the main function has finished
 	defer func(db *sql.DB) {
 		err := db.Close()
 		if err != nil {

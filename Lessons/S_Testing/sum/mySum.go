@@ -10,6 +10,7 @@ func main() {
 
 }
 
+// Sum adds an unlimited number of values of type int
 func sum(num ...int) int {
 	mySum := 0
 	for _, v := range num {

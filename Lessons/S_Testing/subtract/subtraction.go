@@ -9,6 +9,7 @@ func main() {
 
 }
 
+// Minus subtracts an unlimited number of type int values
 func minus(num ...int) int {
 	subtr := 0
 	for _, v := range num {
