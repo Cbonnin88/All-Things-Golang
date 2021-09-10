@@ -1,10 +1,12 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestHello(t *testing.T) {
-	hello := "Go Testing"
-	if hello != "Go Testing" {
-		t.Error("Expected", hello, "Got", hello)
+	helloWorld := "TestA"
+	if helloWorld != "TestA" {
+		t.Error("Expected:", "TestA", "Got:", helloWorld)
 	}
 }
