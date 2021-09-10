@@ -2,13 +2,13 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	fmt.Println("A switch statement with no statement")
 
 	switch {
 	case false:
-		fmt.Println("Only a Sith deals in lies")
+		fmt.Println("You stupid man-thing!!!")
 	case true:
-		fmt.Println("The truth will sent you free")
+		fmt.Println("Rest while you can, because I will hunt you and I will break you!!!")
 	}
 }

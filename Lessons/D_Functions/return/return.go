@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
 	// Calling our newCar() function in the main
@@ -17,6 +20,7 @@ func newCar() string {
 	var budget int
 	_, err := fmt.Scan(&budget)
 	if err != nil {
+		log.Print(err)
 	}
 
 	switch {

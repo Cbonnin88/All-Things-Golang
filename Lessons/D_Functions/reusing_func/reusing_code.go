@@ -49,7 +49,7 @@ func main() {
 	dollarFI = differenceFI * goingBack()
 	dollarGe = differenceGe * goingBack()
 
-	fmt.Println("The new PlayStation 5 is €5OO without VAT inclued, let's see how much it costs in four different European Countries when we include the VAT tax:")
+	fmt.Println("The new PlayStation 5 is €5OO without VAT included, let's see how much it costs in four different European Countries when we include the VAT tax:")
 	fmt.Printf("France (20 percent VAT):   €%.2f\n", france)
 	fmt.Printf("Luxembourg (17 percent VAT): €%.2f\n", luxembourg)
 	fmt.Printf("Finland (24 percent VAT): €%.2f\n", finland)

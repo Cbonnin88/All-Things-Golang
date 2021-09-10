@@ -6,7 +6,7 @@ import (
 
 // a SLICE allows you to group together VALUES of the same TYPE
 
-func main() { //nolint:typecheck
+func main() {
 	// Slicing an Array/Slice
 	arr := [5]int{101, 202, 316, 412, 100} // an Array that we will slice
 	slice1 := arr[:]                       // will print entire array

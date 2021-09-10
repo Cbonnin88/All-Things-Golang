@@ -6,7 +6,7 @@ import (
 )
 
 // Loops in Go :
-func main() { //nolint:typecheck
+func main() {
 
 	// A simple Loop:
 	fmt.Println("Simple incrementing Loop from zero to five:")

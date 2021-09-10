@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 
 	a := incrementBy2()
 	b := decrementby3()

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// GPA function gives us our final grade
 func GPA(finalGrade, midTermPaper float32) (string, float32) {
 	var homeroomScore float32 = 17.5
 	averageGrade := (finalGrade + midTermPaper + homeroomScore) / 2
@@ -25,7 +26,7 @@ func GPA(finalGrade, midTermPaper float32) (string, float32) {
 
 func main() {
 	var myMidTermPaper, myFinalGrade float32
-	myMidTermPaper = 87.6
+	myMidTermPaper = 75.6
 	myFinalGrade = 67.9
 	var myAverage float32
 	var myGrade string

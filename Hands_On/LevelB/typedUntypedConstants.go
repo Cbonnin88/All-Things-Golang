@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	const (
 		word1 string  = "I am a typed constant"
 		num1  int     = 21
@@ -11,7 +11,7 @@ func main() { //nolint:typecheck
 
 	fmt.Println(word1, "- This is a  typed string constant")
 	fmt.Println(num1, "- This is a typed integer constant")
-	fmt.Println(dec1, "- This is a typed float constant\n")
+	fmt.Println(dec1, "- This is a typed float constant")
 
 	const a = "house"
 	const b = 23

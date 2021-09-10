@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	fmt.Println("Printing the alphabet")
 	for i := 65; i <= 90; i++ {
 		fmt.Println(i)

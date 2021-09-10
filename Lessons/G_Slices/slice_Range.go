@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	// We can loop over a slice just like an array:
 
 	// for loop with a slice using "Range":

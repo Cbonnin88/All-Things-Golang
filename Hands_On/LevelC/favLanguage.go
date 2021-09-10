@@ -1,14 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
-func main() { //nolint:typecheck
+func main() {
 
 	fmt.Print("enter a programming language or a word: ")
 	var favLang string
 	_, err := fmt.Scan(&favLang)
 	if err != nil {
-		return
+		log.Println("Unable to comply")
 	}
 	switch favLang {
 	case "Python":

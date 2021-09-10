@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	// creating a Map
 	var countryCapital = map[string]string{
 		"France":  "Paris", // "France" represents the value and "Paris" represents the key"

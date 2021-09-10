@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	slice1 := []string{"France", "Germany", "Spain", "Finland", "Austria"}
 	// We can slice a slice using the "colon (:) operator:
 	fmt.Println("Our entire slice:", slice1[0:])

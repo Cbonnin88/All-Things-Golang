@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 	fmt.Println("All the years I've been alive:")
 	bd := 1988
 	for bd <= 2021 {

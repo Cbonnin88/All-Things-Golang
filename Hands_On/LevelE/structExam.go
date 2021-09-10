@@ -3,52 +3,53 @@ package main
 import "fmt"
 
 type person struct {
-	FirstName	string
-	LastName	string
-	IceCream	[]string
+	FirstName string
+	LastName  string
+	IceCream  []string
 }
-func main() { //nolint:typecheck
-	me := person {
+
+func main() {
+	me := person{
 		FirstName: "Christopher",
-		LastName: 	"Bonnin",
-		IceCream: 	[]string{
-					"chocolate",
-					"peanut butter",
-					"vanilla",
-		},
-	}
-
-	julien := person {
-		FirstName: "Julien",
-		LastName: 	"Bonnin",
-		IceCream: 	[]string {
-					"vanilla",
-					"chocolate",
-					"mango",
-		},
-	}
-
-	benjamin := person {
-		FirstName: "Benjamin",
-		LastName: "Calais",
+		LastName:  "Bonnin",
 		IceCream: []string{
-					"vanilla",
-					"pistache",
-					"red fruit",
+			"chocolate",
+			"peanut butter",
+			"vanilla",
+		},
+	}
+
+	julien := person{
+		FirstName: "Julien",
+		LastName:  "Bonnin",
+		IceCream: []string{
+			"vanilla",
+			"chocolate",
+			"mango",
+		},
+	}
+
+	benjamin := person{
+		FirstName: "Benjamin",
+		LastName:  "Calais",
+		IceCream: []string{
+			"vanilla",
+			"pistache",
+			"red fruit",
 		},
 	}
 
 	// Creating a Map from our type 'person' struct
-	lastName := map [string]person {
-			me.LastName: me,
-			julien.LastName: julien,
-			benjamin.LastName: benjamin,
+	lastName := map[string]person{
+		me.LastName:       me,
+		julien.LastName:   julien,
+		benjamin.LastName: benjamin,
 	}
 
-	 firstName := map [string]person {
-		julien.FirstName: julien,
+	firstName := map[string]person{
+		julien.FirstName:   julien,
 		benjamin.FirstName: benjamin,
-		me.FirstName: me,
+		me.FirstName:       me,
 	}
 	// Ranging over the ice cream flavors
 	fmt.Println("Ranging over our lastName map:")
@@ -66,26 +67,26 @@ func main() { //nolint:typecheck
 		fmt.Println(v2.LastName)
 		fmt.Println(v2.FirstName)
 		for i, val2 := range v2.IceCream {
-			fmt.Println(i,val2)
+			fmt.Println(i, val2)
 		}
 		fmt.Println("")
 	}
 
-	fmt.Println(me.FirstName,me.LastName)
+	fmt.Println(me.FirstName, me.LastName)
 	for i, v := range me.IceCream {
-		fmt.Println(i,v)
+		fmt.Println(i, v)
 	}
 	fmt.Println("")
 
-	fmt.Println(julien.LastName,julien.FirstName)
+	fmt.Println(julien.LastName, julien.FirstName)
 	for i, v := range julien.IceCream {
-		fmt.Println(i,v)
+		fmt.Println(i, v)
 	}
 	fmt.Println("")
 
-	fmt.Println(benjamin.FirstName,benjamin.LastName)
+	fmt.Println(benjamin.FirstName, benjamin.LastName)
 	for i, v := range benjamin.IceCream {
-		fmt.Println(i,v)
+		fmt.Println(i, v)
 	}
 
 }
