@@ -7,7 +7,7 @@ import (
 
 func TestPackage(t *testing.T) {
 	now := time.August
-	if now != time.August {
+	if false {
 		t.Error("Expected", time.August, "Got", now)
 	}
 }

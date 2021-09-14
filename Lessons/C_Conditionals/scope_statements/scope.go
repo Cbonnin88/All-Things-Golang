@@ -6,7 +6,7 @@ func main() {
 
 	x := 30000
 	if salary := x; salary < 27000 {
-		fmt.Println(salary, "The salary offer is a bit low is there any room for negociation ?")
+		fmt.Println(salary, "The salary offer is a bit low is there any room for negotiation ?")
 	} else {
 		fmt.Println("The salary offer is what I was hoping, I'll take it")
 	}
@@ -15,8 +15,8 @@ func main() {
 	case "doctor":
 		fmt.Println("Welcome to the team, Dr. Bonnin")
 	case "lawyer":
-		fmt.Println("Welcome to the firm, Couselor Bonnin")
-	case "professeor":
+		fmt.Println("Welcome to the firm, Counselor Bonnin")
+	case "professor":
 		fmt.Println("Welcome to the University, Professor Bonnin")
 	case "Vampire Slayer":
 		fmt.Println("One girl in all the world, the chosen one")

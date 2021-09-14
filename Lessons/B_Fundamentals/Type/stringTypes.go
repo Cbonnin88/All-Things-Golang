@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
+
 	// A string type represents a set of string values
 	// A string value is a, possibly empty sequences of bytes
 

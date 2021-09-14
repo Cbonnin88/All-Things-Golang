@@ -2,11 +2,13 @@ package main
 
 import "fmt"
 
-// Printf can interpolate stings, or leave place holders in a string and use values to fill in the placeholder
-/*Example:
+// Printf can interpolate stings, or leave placeholders in a string and use values to fill in the placeholder
+/*
+Example:
 guess:= "C"
 fmt.Printf("Is %v your final answer?)
-Prints : "Is C your final answer?*/
+Prints : "Is C your final answer?
+*/
 
 func main() {
 	guess := "Chartres" // String value = %v
@@ -20,9 +22,11 @@ func main() {
 
 }
 
-// As long as you have enough arguments, you can even add multiple place holders
-/*Example:
+// As long as you have enough arguments, you can even add multiple placeholders
+/*
+Example:
 selection := "soup"
 selection := "salad"
 fmt.Println("Do you want %v or %v tonight?")
-Prints: Do you want soup or salade tonight*/
+Prints: Do you want soup or salade tonight
+*/

@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func main() { //nolint:typecheck
+func main() {
 
 	// With Go, it's possible to create your own Types:
 	// ** Side note: %T shows us the 'type' that is our value **
 
-	// Example of a int type using %T:
+	// Example of an int type using %T:
 	var num int
 	num = 32
 	fmt.Printf("32 is an %T type\n", num)

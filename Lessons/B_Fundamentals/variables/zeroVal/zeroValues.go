@@ -11,9 +11,11 @@ func main() {
 	// All numeric variables have a value of "0" before assignment
 	// String variables have a default value of ""
 
-	/* var emptyValue int
+	/*
+	   var emptyValue int
 	   var emptyValue int = 0
-	   These two are the same */
+	   These two are the same
+	*/
 
 	fmt.Println(emptyClassInt, emptyGrace, emptyTeacherName, isPassFail)
 

@@ -12,5 +12,3 @@ func performAddition() {
 func main() {
 	performAddition()
 }
-
-// This prints an error because the function is in a different scope that defined in the main

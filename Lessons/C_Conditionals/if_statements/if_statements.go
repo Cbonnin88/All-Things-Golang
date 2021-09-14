@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	// Simple IF statement:
-	correctNumber := true
-	if correctNumber {
+	// correctNumber := true
+	if true {
 		fmt.Println("We won the lottery !!!")
 	}
 
@@ -17,8 +17,8 @@ func main() {
 	fmt.Println("separate statements")
 
 	// Simple If-else statement:
-	notCorrectNumber := true
-	if notCorrectNumber != true {
+	// notCorrectNumber := true
+	if false {
 		fmt.Println("You won the lottery")
 	} else {
 		fmt.Println("Sorry, try again ")
