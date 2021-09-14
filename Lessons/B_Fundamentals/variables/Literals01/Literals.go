@@ -14,4 +14,5 @@ func main() {
 + is to add
 - is to subtract
 * is to multiply
-/ is to take the remainder between to numbers (the modulus operator) */
+/ is to take the remainder between to numbers (the modulus operator)
+*/
