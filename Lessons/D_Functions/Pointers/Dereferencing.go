@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	// Dereferencing or indirecting is when we use our pointer to access the address and change its value
+	// DeReferencing or indirecting is when we use our pointer to access the address and change its value
 
 	// '&' gives you the address
 	// '*' gives you the value stored at an address when you have the address

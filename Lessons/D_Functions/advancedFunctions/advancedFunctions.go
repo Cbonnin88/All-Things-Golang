@@ -11,7 +11,7 @@ func main() {
 	ref2 := reference2
 	ref2("I have been referenced again")
 
-	// creating and calling a function inside of our main()
+	// creating and calling a function inside our main()
 	words := func() {
 		fmt.Println("I am a function within a function")
 	}

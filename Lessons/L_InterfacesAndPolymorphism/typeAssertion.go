@@ -6,7 +6,7 @@ import (
 )
 
 // declaring our 'shape' interface:
-type shape2 interface{
+type shape2 interface {
 	area2() float64
 	parameter2() float64
 }
@@ -17,14 +17,14 @@ type polygon interface {
 
 // declaring our structs:
 type line struct {
-	radius float64
+	radius   float64
 	isAShape bool
-	sides	 int
+	sides    int
 }
 
-func main() { //nolint:typecheck
-	 l := line{0, false, 0}
-	 Calculate2(l)
+func main() {
+	l := line{0, false, 0}
+	Calculate2(l)
 }
 func (l line) area2() float64 {
 	fmt.Println("The area of a line:")
@@ -41,15 +41,15 @@ func (l line) Getsides() int {
 	return l.sides
 }
 
-func Calculate2 (s shape2) {
+func Calculate2(s shape2) {
 	// Type assertion
-	 rect := s.(polygon)
-	 fmt.Printf("My type is: %T",rect)
+	rect := s.(polygon)
+	fmt.Printf("My type is: %T", rect)
 
 }
 
 /*
-**Assertions are for interface types**
+** Assertions are for interface types **
 
 We can also use type assertion via an 'if' statement:
 if rect, ok := s.(line); ok {

@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	// Recusion is when a function calls itself a certain number of times and then stops
-	fmt.Println("The factoral of five is:", 5*4*3*2*1)
+	// Recursion is when a function calls itself a certain number of times and then stops
+
+	fmt.Println("The factorial of five is:", 5*4*3*2*1)
 	fact := factorial(6)
 	fmt.Println("The factorial of six:", fact)
 
@@ -13,7 +14,7 @@ func main() {
 
 }
 
-// Using recusion to calculate our factorial:
+// Recursion to calculate our factorial:
 func factorial(num int) int {
 	if num == 0 {
 		return 1

@@ -3,64 +3,64 @@ package main
 import "fmt"
 
 type employee struct {
-	firstName 	string
-	lastName	string
-	Title		string
-	grade		int
-	department	string
-	salary		int
-	motto		string
-	isWorking	bool
+	firstName  string
+	lastName   string
+	Title      string
+	grade      int
+	department string
+	salary     int
+	motto      string
+	isWorking  bool
 }
 
 type ceo struct {
 	employee
-	isCEO  bool
+	isCEO bool
 }
 
 type human interface {
 	saying()
 }
 
-func main() { //nolint:typecheck
+func main() {
 
 	emp1 := employee{
 		firstName: "Christopher",
-		lastName: 	"Bonnin",
-		Title: 		"Go Developer",
-		grade:		1,
-		salary:		28000,
-		motto: 		"Working 9 to 5",
-		isWorking: 	true,
+		lastName:  "Bonnin",
+		Title:     "Go Developer",
+		grade:     1,
+		salary:    28000,
+		motto:     "Working 9 to 5",
+		isWorking: true,
 	}
 
 	emp2 := employee{
 		firstName: "Alexandra",
 		lastName:  "Shackles",
-		Title: 		"Chief Technical Officer",
-		grade:		10,
-		salary:     80000,
-		motto: 		"I am woman here me roar",
-		isWorking:	true,
+		Title:     "Chief Technical Officer",
+		grade:     10,
+		salary:    80000,
+		motto:     "I am woman here me roar",
+		isWorking: true,
 	}
 
 	ceo1 := ceo{
 		employee: employee{ // our embedded struct
 			firstName: "Alice",
 			lastName:  "Martin",
-			Title:		"Lady",
-			grade:		11,
-			salary:     100000000,
-			motto:		"I'm the boss",
-			isWorking:   true,
+			Title:     "Lady",
+			grade:     11,
+			salary:    100000000,
+			motto:     "I'm the boss",
+			isWorking: true,
 		},
 		isCEO: true,
 	}
 	/*
-	An embedded struct promotes all of it's values to the outer struct, similar to inheritance
-	Inter type promotion is similar to overriding in other OOP languages
-	In Go there are no classes, only TYPES
-	In Go, you don't instantiate, you create a VALUE of a TYPE
+		An embedded struct promotes all of its values to the outer struct, similar to inheritance
+		Inter type promotion is similar to overriding in other OOP languages
+		In Go there are no classes, only TYPES
+		In Go, you don't instantiate, you create a VALUE of a TYPE
 	*/
 
 	fmt.Println("Calling our struct:")
@@ -90,7 +90,7 @@ func main() { //nolint:typecheck
 	foo(emp2)
 }
 
-func (e employee) saying(){
+func (e employee) saying() {
 	fmt.Println(e.firstName, "says", e.motto)
 }
 
@@ -98,6 +98,6 @@ func (c ceo) saying() {
 	fmt.Println(c.firstName, "says", c.motto)
 }
 
-func foo (h human) {
+func foo(h human) {
 	h.saying()
 }
