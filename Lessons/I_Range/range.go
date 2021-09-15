@@ -8,7 +8,7 @@ func main() {
 	// using the range keyword
 	fmt.Println("Using the range keyword:")
 	for i, element := range num {
-		// element = num[i]
+		element = num[i]
 		fmt.Printf("%d: %d\n", i, element)
 	}
 
